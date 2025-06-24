@@ -1,39 +1,135 @@
 [
   {
-    "id": "echo-chamber",
-    "title": "Echo Chamber",
-    "description": "Knowledge and research assistant and agent.",
-    "links": {
-      "github": "https://github.com/rajput-musa/echo-chamber",
-      "live": "https://echo-chamber-agent.streamlit.app/"
+    "id": "rag-chatbot",
+    "title": "RAG Document Chatbot",
+    "description": "An interactive RAG chatbot that answers questions from documents with semantic search, re-ranking, and LLMs for accurate, source-backed answers.",
+    "details": {
+      "summary": "An interactive Retrieval-Augmented Generation (RAG) chatbot that answers questions based on any document corpus. It combines semantic search, re-ranking, and large language models (LLMs) to deliver accurate, context-aware, and source-backed answers.",
+      "sections": [
+        {
+          "title": "How It Works",
+          "list": [
+            "User submits a question.",
+            "The question is embedded using all-MiniLM-L6-v2.",
+            "Pinecone retrieves semantically relevant document chunks.",
+            "Cohere's Rerank API refines the context ordering.",
+            "Groq's Llama 3 70B generates a final answer using the top-ranked context.",
+            "The chatbot displays the answer along with the referenced sources."
+          ],
+          "isOrdered": true
+        },
+        {
+          "title": "Core Technologies",
+          "list": [
+            "Vector DB: Pinecone",
+            "LLM: Llama 3 70B via Groq API",
+            "Re-ranking: Cohere Rerank",
+            "Embeddings: all-MiniLM-L6-v2",
+            "Frontend: Streamlit",
+            "Deployment: Hugging Face Spaces via Docker"
+          ],
+          "isOrdered": false
+        }
+      ]
     },
-    "tags": ["React", "Machine Learning", "AI", "LLMs"]
+    "links": {
+      "github": "https://github.com/rajput-musa/rag-chatbot",
+      "live": "https://huggingface.co/spaces/MusaR/rag-chatbot"
+    },
+    "tags": ["Python", "Pinecone", "LLM", "Cohere", "Streamlit", "Docker", "RAG", "AI"]
   },
   {
-    "id": "lingo-v-lingo",
-    "title": "Lingo-v-Lingo",
-    "description": "A high-performance multimodal video generator for educational videos, leveraging AI to create engaging content.",
-    "links": {
-      "github": "https://github.com/rajput-musa/Lingo-v-Lingo"
+    "id": "local-rag-chatbot",
+    "title": "RAG Chatbot for Multiple PDFs",
+    "description": "An advanced Retrieval-Augmented Generation (RAG) chatbot to converse with multiple PDF documents, running a local language model (Phi-3) on your machine.",
+    "details": {
+      "summary": "This project is an advanced Retrieval-Augmented Generation (RAG) chatbot that allows you to have conversations about the content of multiple PDF documents. It leverages a powerful local language model (Phi-3), a cloud-based vector database (Pinecone), and a user-friendly web interface built with Streamlit.",
+      "sections": [
+        {
+          "title": "Features",
+          "list": [
+            "Multi-PDF Querying: Ingests and processes multiple PDF files from a local directory.",
+            "High-Performance RAG Pipeline: Uses a pipeline with langchain for efficient and relevant document retrieval.",
+            "Local LLM: Runs the powerful microsoft/Phi-3-mini-4k-instruct model locally using llama-cpp-python.",
+            "Cloud Vector Store: Utilizes Pinecone for a scalable and persistent vector database.",
+            "Interactive UI: A clean and intuitive chat interface powered by Streamlit."
+          ],
+          "isOrdered": false
+        },
+        {
+          "title": "Tech Stack",
+          "list": [
+            "Orchestration: LangChain",
+            "LLM: Microsoft Phi-3",
+            "Vector Database: Pinecone",
+            "Embeddings: all-MiniLM-L6-v2",
+            "UI: Streamlit"
+          ],
+          "isOrdered": false
+        }
+      ]
     },
-    "tags": ["AI & Machine Learning", "LLMs"]
+    "links": {
+      "github": "https://github.com/rajput-musa/local-RAG-chatbot"
+    },
+    "tags": ["Python", "LangChain", "LLM", "RAG", "Streamlit", "AI"]
   },
   {
-    "id": "campus-navigation-system",
-    "title": "Campus Navigation System",
-    "description": "A web-based application focused on teaching the Devanagari script through interactive lessons and quizzes, leveraging gamification to enhance learning.",
-    "links": {
-      "github": "https://github.com/rajput-musa/Campus-Navigation-System"
+    "id": "cpu-scheduling-algorithms",
+    "title": "CPU Scheduling Algorithms",
+    "description": "Implementation and visualization of various CPU scheduling algorithms like Banker's, SJF, FCFS, Round Robin, and Priority, calculating performance metrics.",
+    "details": {
+      "summary": "This repository implements various CPU scheduling algorithms commonly used in operating systems. The main.py file includes the implementation of the following algorithms along with their Gantt chart visualization. Also, it calculates the waiting time (WT), turnaround time (TAT), and average waiting (AWT) and turnaround time (ATAT) for each algorithm.",
+      "sections": [
+        {
+          "title": "Implemented Algorithms",
+          "list": [
+            "Banker's Algorithm",
+            "Shortest Job First (SJF) (Preemptive & Non-Preemptive)",
+            "First-Come First-Served (FCFS)",
+            "Round Robin",
+            "Priority (Preemptive & Non-Preemptive)"
+          ],
+          "isOrdered": false
+        }
+      ]
     },
-    "tags": ["Python", "Deep Learning", "Completed"]
+    "links": {
+      "github": "https://github.com/rajput-musa/CPUSchedulingAlgorithms"
+    },
+    "tags": ["Python", "Operating Systems", "Algorithms"]
   },
   {
-    "id": "val-reverie",
-    "title": "Val Reverie",
-    "description": "An autonomous learning assistant designed to streamline and enhance the educational experience through AI-driven summarization, personalized quizzes, and interactive chat.",
-    "links": {
-      "github": "https://github.com/rajput-musa/Val-Reverie"
+    "id": "digital-steganography",
+    "title": "Digital Steganography",
+    "description": "A Java application to embed and extract secret text messages within digital images using the Least Significant Bit (LSB) steganography technique.",
+    "details": {
+      "summary": "Digital Steganography is a Java application that enables the embedding and extraction of secret messages within digital images. Steganography is the practice of concealing information within other non-secret data to maintain the confidentiality of the message. This project utilizes the technique of LSB (Least Significant Bit) steganography to embed text messages within image files.",
+      "sections": [
+        {
+          "title": "Features",
+          "list": [
+            "Embed a secret message within an image file.",
+            "Extract a secret message from an image file.",
+            "Supports various image formats such as JPEG, PNG, BMP, etc.",
+            "User-friendly interface for easy interaction.",
+            "Compatible with Java SE platform."
+          ],
+          "isOrdered": false
+        },
+        {
+          "title": "Group Members",
+          "list": [
+            "Moosa Qaisar (21-CP-67)",
+            "Aazib Majeed (21-CP-01)"
+          ],
+          "isOrdered": false
+        }
+      ]
     },
-    "tags": ["Python", "Deep Learning"]
+    "links": {
+      "github": "https://github.com/rajput-musa/DigitalSteganography"
+    },
+    "tags": ["Java", "Steganography", "Security", "Image Processing"]
   }
 ] 
