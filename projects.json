@@ -1,34 +1,39 @@
 [
   {
-    "id": "rag-chatbot",
-    "name": "Cloud RAG Document Chatbot",
-    "description": "An interactive RAG chatbot that answers questions from documents using semantic search, re-ranking, and LLMs (Llama 3, Groq) to deliver source-backed answers.",
-    "tags": ["Pinecone", "Groq", "Cohere", "Streamlit", "Docker"],
-    "githubLink": "https://github.com/rajput-musa/rag-chatbot",
-    "demoLink": "https://huggingface.co/spaces/MusaR/rag-chatbot"
+    "id": "echo-chamber",
+    "title": "Echo Chamber",
+    "description": "Knowledge and research assistant and agent.",
+    "links": {
+      "github": "https://github.com/rajput-musa/echo-chamber",
+      "live": "https://echo-chamber-agent.streamlit.app/"
+    },
+    "tags": ["React", "Machine Learning", "AI", "LLMs"]
   },
   {
-    "id": "local-rag-chatbot",
-    "name": "Local-First RAG Chatbot",
-    "description": "A RAG chatbot that runs a local LLM (Phi-3) to have conversations with multiple PDF documents, using Pinecone for vector storage and Streamlit for the UI.",
-    "tags": ["LangChain", "Phi-3", "Pinecone", "Streamlit", "Local LLM"],
-    "githubLink": "https://github.com/rajput-musa/local-RAG-chatbot",
-    "demoLink": ""
+    "id": "lingo-v-lingo",
+    "title": "Lingo-v-Lingo",
+    "description": "A high-performance multimodal video generator for educational videos, leveraging AI to create engaging content.",
+    "links": {
+      "github": "https://github.com/rajput-musa/Lingo-v-Lingo"
+    },
+    "tags": ["AI & Machine Learning", "LLMs"]
   },
   {
-    "id": "cpu-scheduling-algorithms",
-    "name": "CPU Scheduling Algorithms",
-    "description": "A Python implementation of various CPU scheduling algorithms (e.g., Banker's, SJF, Round Robin) with Gantt chart visualizations and performance statistics.",
-    "tags": ["Python", "Operating Systems", "Algorithms"],
-    "githubLink": "https://github.com/rajput-musa/CPUSchedulingAlgorithms",
-    "demoLink": ""
+    "id": "campus-navigation-system",
+    "title": "Campus Navigation System",
+    "description": "A web-based application focused on teaching the Devanagari script through interactive lessons and quizzes, leveraging gamification to enhance learning.",
+    "links": {
+      "github": "https://github.com/rajput-musa/Campus-Navigation-System"
+    },
+    "tags": ["Python", "Deep Learning", "Completed"]
   },
   {
-    "id": "digital-steganography",
-    "name": "Digital Steganography",
-    "description": "A Java application that embeds and extracts secret text messages within digital images using the Least Significant Bit (LSB) steganography technique.",
-    "tags": ["Java", "Swing", "Steganography", "Image Processing"],
-    "githubLink": "https://github.com/rajput-musa/DigitalSteganography",
-    "demoLink": ""
+    "id": "val-reverie",
+    "title": "Val Reverie",
+    "description": "An autonomous learning assistant designed to streamline and enhance the educational experience through AI-driven summarization, personalized quizzes, and interactive chat.",
+    "links": {
+      "github": "https://github.com/rajput-musa/Val-Reverie"
+    },
+    "tags": ["Python", "Deep Learning"]
   }
 ] 
