@@ -15,10 +15,10 @@ import GitHubChart from "../components/Git";
 import ProjectCard from "../components/ProjectCard";
 
 const currentProjectIds = [
-  "rag-chatbot",
-  "local-rag-chatbot",
-  "cpu-scheduling-algorithms",
-  "digital-steganography",
+  "echo-chamber",
+  "lingo-v-lingo",
+  "campus-navigation-system",
+  "val-reverie",
 ];
 
 const CurrentProjectsSection = ({ projects }: { projects: ProjectType[] }) => (
@@ -56,7 +56,7 @@ export default function About() {
 
     const fetchProjects = async () => {
       try {
-        const response = await fetch("/projects.json");
+        const response = await fetch("/data/projects.json");
         if (!response.ok) throw new Error("Failed to fetch projects");
         const allProjects = await response.json();
         const filteredProjects = allProjects.filter((project: ProjectType) =>
