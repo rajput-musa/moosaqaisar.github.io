@@ -1,0 +1,20 @@
+[
+  {
+    "id": "face-mask-detector",
+    "name": "Real-time Face Mask Detector",
+    "description": "A system to detect whether individuals are wearing face masks in real-time video streams, built with deep learning and computer vision.",
+    "imageUrl": "",
+    "tags": ["Python", "TensorFlow", "Keras", "OpenCV", "Deep Learning"],
+    "githubLink": "https://github.com/rajput-musa/Face-Mask-Detection-System",
+    "demoLink": "#"
+  },
+  {
+    "id": "devanagari-ocr",
+    "name": "Devanagari Character Recognition",
+    "description": "An Optical Character Recognition (OCR) system to accurately identify and transcribe handwritten Devanagari characters using a Convolutional Neural Network.",
+    "imageUrl": "",
+    "tags": ["Python", "TensorFlow", "Keras", "CNN", "Machine Learning"],
+    "githubLink": "https://github.com/rajput-musa/Devanagari-Handwritten-Character-Recognition",
+    "demoLink": "#"
+  }
+] 
