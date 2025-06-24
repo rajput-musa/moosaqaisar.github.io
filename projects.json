@@ -1,5 +1,41 @@
 [
   {
+    "id": "nlp-rag-world-news",
+    "title": "NLP RAG on 30,000 World News Articles",
+    "description": "A RAG pipeline built on the world news dataset, featuring hybrid retrieval and cross-encoder reranking.",
+    "details": {
+      "summary": "This project implements a complete Retrieval-Augmented Generation (RAG) pipeline from scratch to answer queries based on a dataset of 30,000 world news articles. Unlike typical RAG systems that rely on high-level frameworks, this project uses low-level libraries like PyTorch, Transformers, and FAISS to showcase the core mechanics and allow maximum control over the architecture.",
+      "sections": [
+        {
+          "title": "Key Features",
+          "list": [
+            "Custom From-Scratch RAG Implementation",
+            "Hybrid Retrieval using BM25 for keywords and FAISS for semantics",
+            "Cross-Encoder Reranking for contextual relevance",
+            "Optimized for deployment on Hugging Face Spaces"
+          ],
+          "isOrdered": false
+        },
+        {
+          "title": "Core Technologies",
+          "list": [
+            "LLM: Microsoft Phi-3",
+            "Embeddings: multi-qa-MiniLM-L6-cos-v1",
+            "Reranker: cross-encoder/ms-marco-MiniLM-L-6-v2",
+            "Core Tools: PyTorch, Transformers, Gradio, FAISS, Pandas",
+            "Platform: Hugging Face Spaces"
+          ],
+          "isOrdered": false
+        }
+      ]
+    },
+    "links": {
+      "github": "https://github.com/rajput-musa/NLP-RAG-World-News",
+      "live": "https://huggingface.co/spaces/MusaR/NLP-RAG-world-news"
+    },
+    "tags": ["PyTorch", "Transformers", "Gradio", "FAISS", "Python", "RAG", "AI", "LLM"]
+  },
+  {
     "id": "rag-chatbot",
     "title": "RAG Document Chatbot",
     "description": "An interactive RAG chatbot that answers questions from documents with semantic search, re-ranking, and LLMs for accurate, source-backed answers.",
