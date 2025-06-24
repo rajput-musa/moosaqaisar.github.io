@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import "react-medium-image-zoom/dist/styles.css";
 
 import { Project as ProjectType } from "../components/ProjectCard";
@@ -18,10 +18,6 @@ const currentProjectIds = [
 ];
 
 export default function About() {
-  const [currentProjects, setCurrentProjects] = useState<ProjectType[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
   useEffect(() => {
     // Add a class to the document to ensure dark mode is respected
     document.documentElement.classList.add("color-scheme-adaptive");
@@ -33,17 +29,11 @@ export default function About() {
         );
         if (!response.ok) throw new Error("Failed to fetch projects");
         const allProjects = await response.json();
-        const filteredProjects = allProjects.filter((project: ProjectType) =>
-          currentProjectIds.includes(project.id),
+        /* const filteredProjects = */ allProjects.filter(
+          (project: ProjectType) => currentProjectIds.includes(project.id),
         );
-        setCurrentProjects(filteredProjects);
-        setLoading(false);
       } catch (error) {
         console.error("Error fetching projects:", error);
-        setError(
-          error instanceof Error ? error.message : "Failed to fetch projects",
-        );
-        setLoading(false);
       }
     };
 
@@ -55,6 +45,30 @@ export default function About() {
     };
   }, []);
 
+  const ImportantDocuments = () => (
+    <div className="mt-8 mb-8 pb-6 border-b border-[color-mix(in_oklch,var(--color-primary)_10%,transparent)]">
+      <h3 className="text-lg font-semibold mb-4">Important Documents</h3>
+      <div className="flex flex-wrap gap-3">
+        <a
+          href="/assets/MoosaQaisar.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-4 py-2 text-sm rounded-lg border border-[color-mix(in_oklch,var(--color-primary)_10%,transparent)] hover:bg-[color-mix(in_oklch,var(--color-primary)_5%,transparent)] transition-colors"
+        >
+          Resume
+        </a>
+        <a
+          href="/assets/CoverLetter.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-4 py-2 text-sm rounded-lg border border-[color-mix(in_oklch,var(--color-primary)_10%,transparent)] hover:bg-[color-mix(in_oklch,var(--color-primary)_5%,transparent)] transition-colors"
+        >
+          Cover Letter
+        </a>
+      </div>
+    </div>
+  );
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -64,6 +78,7 @@ export default function About() {
     >
       <TLDR />
       <GitHubChart username="rajput-musa" />
+      <ImportantDocuments />
       <AboutSection />
       <WorkExperienceSection />
       <EducationSection />

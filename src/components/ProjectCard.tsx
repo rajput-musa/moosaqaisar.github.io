@@ -1,13 +1,16 @@
 import { motion } from "framer-motion";
-import ProjectIndicators from "../components/ProjectIndicators";
 
 export interface Project {
   id: string;
-  title: string;
+  name: string;
   description: string;
+  imageUrl?: string;
   tags: string[];
   githubLink?: string;
   demoLink?: string;
+  details?: {
+    longDescription: string;
+  };
 }
 
 interface ProjectCardProps {
@@ -67,7 +70,7 @@ const ProjectCard = ({
         {/* Project content */}
         <div className="relative">
           <h3 className="text-xl font-bold group-hover:text-[var(--color-primary)] transition-colors mb-2">
-            {project.title}
+            {project.name}
           </h3>
 
           <p
@@ -77,7 +80,7 @@ const ProjectCard = ({
           </p>
 
           <div className="flex flex-wrap gap-2 mb-6">
-            {project.tags?.map((tag) => (
+            {project.tags?.map((tag: string) => (
               <span
                 key={tag}
                 className="px-2 py-1 text-xs rounded-full bg-[color-mix(in_oklch,var(--color-primary)_10%,transparent)]"
@@ -92,7 +95,7 @@ const ProjectCard = ({
               <button
                 onClick={(e) => handleLinkClick(e, project.githubLink!)}
                 className="text-sm hover:text-[var(--color-primary)] transition-colors inline-flex items-center gap-1 cursor-pointer"
-                aria-label={`View ${project.title} on GitHub`}
+                aria-label={`View ${project.name} on GitHub`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +113,7 @@ const ProjectCard = ({
               <button
                 onClick={(e) => handleLinkClick(e, project.demoLink!)}
                 className="text-sm hover:text-[var(--color-primary)] transition-colors inline-flex items-center gap-1 cursor-pointer"
-                aria-label={`View ${project.title} live demo`}
+                aria-label={`View ${project.name} live demo`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

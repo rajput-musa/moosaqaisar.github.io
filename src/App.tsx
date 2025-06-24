@@ -9,17 +9,11 @@ import { Suspense, lazy, useEffect, useState } from "react";
 // Lazy load pages for better performance
 const About = lazy(() => import("./pages/About"));
 const Projects = lazy(() => import("./pages/Projects"));
-const Blog = lazy(() => import("./pages/Blog"));
-const Publications = lazy(() => import("./pages/Publications"));
 const ReadingList = lazy(() => import("./pages/ReadingList"));
 const Bookshelf = lazy(() => import("./pages/Bookshelf"));
 const ProjectView = lazy(() => import("./pages/ProjectView"));
-const BlogPost = lazy(() => import("./pages/BlogPost"));
 const Header = lazy(() => import("./components/Header"));
 const NavigationBar = lazy(() => import("./components/NavigationBar"));
-const ProjectIndicatorTest = lazy(
-  () => import("./components/ProjectIndicatorTest"),
-);
 
 export default function App() {
   const [theme, setTheme] = useState<"light" | "dark" | "system">("system");
@@ -171,15 +165,8 @@ export default function App() {
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/projects/:id" element={<ProjectView />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/publications" element={<Publications />} />
               <Route path="/reading-list" element={<ReadingList />} />
-              <Route path="/blog/:id" element={<BlogPost />} />
               <Route path="/bookshelf" element={<Bookshelf />} />
-              <Route
-                path="/test/indicators"
-                element={<ProjectIndicatorTest />}
-              />
             </Routes>
           </Suspense>
         </main>

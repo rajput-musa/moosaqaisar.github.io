@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-import TwitterTweet from "../TwitterEmbed";
-
 export default function Socials() {
   return (
     <section className="space-y-6">
