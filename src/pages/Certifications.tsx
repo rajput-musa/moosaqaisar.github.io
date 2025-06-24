@@ -43,7 +43,7 @@ export default function Certifications() {
     const fetchCertifications = async () => {
       try {
         const response = await fetch(
-          `${import.meta.env.BASE_URL}certifications.json`,
+          "https://raw.githubusercontent.com/rajput-musa/moosaqaisar.github.io/master/public/certifications.json",
         );
         if (!response.ok) {
           throw new Error("Failed to fetch certifications");

@@ -13,7 +13,7 @@ export default function Projects() {
     const fetchProjects = async () => {
       try {
         const response = await fetch(
-          `${import.meta.env.BASE_URL}projects.json`,
+          "https://raw.githubusercontent.com/rajput-musa/moosaqaisar.github.io/master/public/projects.json",
         );
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
