@@ -31,15 +31,15 @@ export default function EducationSection() {
             </h3>
             <p className="text-lg font-semibold mt-1">
               Bachelor of Science in Computer Engineering
-            </p>
+                  </p>
           </div>
-        </div>
-      </div>
+                </div>
+              </div>
 
       <div
         id="education-pgc"
         className="p-6 rounded-xl border border-transparent hover:border hover:border-[color-mix(in_oklch,var(--color-primary)_30%,transparent)] transition-all hover:shadow-lg"
-      >
+                >
         <div className="flex flex-col md:flex-row gap-6">
            <div className="md:w-1/4 flex flex-col items-center">
             <div className="w-32 h-32 rounded-lg overflow-hidden relative mx-auto">
@@ -48,7 +48,7 @@ export default function EducationSection() {
                 alt="Punjab Group of Colleges Logo"
                 className="w-full h-full object-contain"
               />
-            </div>
+                </div>
             <div className="mt-4 text-center">
               <span className="px-2 py-1 text-xs rounded-full bg-[color-mix(in_oklch,var(--color-primary)_15%,transparent)]">
                 87%

@@ -7,7 +7,7 @@ export default defineConfig(({ command }) => {
   const base = command === "build" ? "/moosaqaisar.github.io/" : "/";
   return {
     base,
-    plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss()],
     publicDir: "public",
   };
 });

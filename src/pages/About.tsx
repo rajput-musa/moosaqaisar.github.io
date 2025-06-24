@@ -15,10 +15,11 @@ import GitHubChart from "../components/Git";
 import ProjectCard from "../components/ProjectCard";
 
 const currentProjectIds = [
-  "echo-chamber",
-  "lingo-v-lingo",
-  "campus-navigation-system",
-  "val-reverie",
+  "nlp-rag-world-news",
+  "local-rag-chatbot",
+  "rag-chatbot",
+  "cpu-scheduling-algorithms",
+  "digital-steganography",
 ];
 
 const CurrentProjectsSection = ({ projects }: { projects: ProjectType[] }) => (
@@ -40,8 +41,8 @@ const CurrentProjectsSection = ({ projects }: { projects: ProjectType[] }) => (
       effectively.
     </p>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {projects.map((project) => (
-        <ProjectCard key={project.id} project={project} />
+      {projects.map((project, index) => (
+        <ProjectCard key={project.id} project={project} index={index} />
       ))}
     </div>
   </section>

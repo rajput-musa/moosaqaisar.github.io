@@ -43,7 +43,7 @@ export default function TechnicalExpertiseSection() {
               <div className="flex justify-between items-center mb-2">
                 <h4 className="font-medium">Software Development</h4>
                 <span className="text-xs px-2 py-1 rounded-full bg-[color-mix(in_oklch,var(--color-primary)_15%,transparent)]">
-                  Intermediate
+                  Advanced
                 </span>
               </div>
               <div className="flex flex-wrap gap-2">
@@ -63,18 +63,18 @@ export default function TechnicalExpertiseSection() {
               <div className="flex justify-between items-center mb-2">
                 <h4 className="font-medium">Hardware & Embedded Systems</h4>
                 <span className="text-xs px-2 py-1 rounded-full bg-[color-mix(in_oklch,var(--color-primary)_15%,transparent)]">
-                  Advanced
+                  Intermediate
                 </span>
               </div>
               <div className="flex flex-wrap gap-2">
                 {["FPGA", "Verilog", "Arduino", "Microcontrollers"].map(
                   (skill) => (
-                    <span
-                      key={skill}
-                      className="px-2 py-1 text-xs rounded-md bg-[color-mix(in_oklch,var(--color-primary)_5%,transparent)]"
-                    >
-                      {skill}
-                    </span>
+                  <span
+                    key={skill}
+                    className="px-2 py-1 text-xs rounded-md bg-[color-mix(in_oklch,var(--color-primary)_5%,transparent)]"
+                  >
+                    {skill}
+                  </span>
                   ),
                 )}
               </div>
@@ -103,12 +103,12 @@ export default function TechnicalExpertiseSection() {
             <div className="space-y-2">
               <div className="flex justify-between items-center">
                 <span className="font-medium">C/C++</span>
-                <span className="text-xs">85%</span>
+                <span className="text-xs">70%</span>
               </div>
               <div className="h-2 rounded-full bg-[color-mix(in_oklch,var(--color-primary)_10%,transparent)]">
                 <div
                   className="h-full rounded-full bg-[var(--color-primary)]"
-                  style={{ width: "85%" }}
+                  style={{ width: "70%" }}
                 ></div>
               </div>
             </div>
@@ -116,12 +116,12 @@ export default function TechnicalExpertiseSection() {
             <div className="space-y-2">
               <div className="flex justify-between items-center">
                 <span className="font-medium">Verilog</span>
-                <span className="text-xs">80%</span>
+                <span className="text-xs">60%</span>
               </div>
               <div className="h-2 rounded-full bg-[color-mix(in_oklch,var(--color-primary)_10%,transparent)]">
                 <div
                   className="h-full rounded-full bg-[var(--color-primary)]"
-                  style={{ width: "80%" }}
+                  style={{ width: "60%" }}
                 ></div>
               </div>
             </div>
