@@ -14,7 +14,12 @@ import TechnicalExpertiseSection from "../components/about/TechnicalExpertise";
 import GitHubChart from "../components/Git";
 import ProjectCard from "../components/ProjectCard";
 
-const currentProjectIds = ["face-mask-detector", "devanagari-ocr"];
+const currentProjectIds = [
+  "rag-chatbot",
+  "local-rag-chatbot",
+  "cpu-scheduling-algorithms",
+  "digital-steganography",
+];
 
 const CurrentProjectsSection = ({ projects }: { projects: ProjectType[] }) => (
   <section>
