@@ -1,20 +1,34 @@
 [
   {
-    "id": "face-mask-detector",
-    "name": "Real-time Face Mask Detector",
-    "description": "A system to detect whether individuals are wearing face masks in real-time video streams, built with deep learning and computer vision.",
-    "imageUrl": "",
-    "tags": ["Python", "TensorFlow", "Keras", "OpenCV", "Deep Learning"],
-    "githubLink": "https://github.com/rajput-musa/Face-Mask-Detection-System",
-    "demoLink": "#"
+    "id": "rag-chatbot",
+    "name": "Cloud RAG Document Chatbot",
+    "description": "An interactive RAG chatbot that answers questions from documents using semantic search, re-ranking, and LLMs (Llama 3, Groq) to deliver source-backed answers.",
+    "tags": ["Pinecone", "Groq", "Cohere", "Streamlit", "Docker"],
+    "githubLink": "https://github.com/rajput-musa/rag-chatbot",
+    "demoLink": "https://huggingface.co/spaces/MusaR/rag-chatbot"
   },
   {
-    "id": "devanagari-ocr",
-    "name": "Devanagari Character Recognition",
-    "description": "An Optical Character Recognition (OCR) system to accurately identify and transcribe handwritten Devanagari characters using a Convolutional Neural Network.",
-    "imageUrl": "",
-    "tags": ["Python", "TensorFlow", "Keras", "CNN", "Machine Learning"],
-    "githubLink": "https://github.com/rajput-musa/Devanagari-Handwritten-Character-Recognition",
-    "demoLink": "#"
+    "id": "local-rag-chatbot",
+    "name": "Local-First RAG Chatbot",
+    "description": "A RAG chatbot that runs a local LLM (Phi-3) to have conversations with multiple PDF documents, using Pinecone for vector storage and Streamlit for the UI.",
+    "tags": ["LangChain", "Phi-3", "Pinecone", "Streamlit", "Local LLM"],
+    "githubLink": "https://github.com/rajput-musa/local-RAG-chatbot",
+    "demoLink": ""
+  },
+  {
+    "id": "cpu-scheduling-algorithms",
+    "name": "CPU Scheduling Algorithms",
+    "description": "A Python implementation of various CPU scheduling algorithms (e.g., Banker's, SJF, Round Robin) with Gantt chart visualizations and performance statistics.",
+    "tags": ["Python", "Operating Systems", "Algorithms"],
+    "githubLink": "https://github.com/rajput-musa/CPUSchedulingAlgorithms",
+    "demoLink": ""
+  },
+  {
+    "id": "digital-steganography",
+    "name": "Digital Steganography",
+    "description": "A Java application that embeds and extracts secret text messages within digital images using the Least Significant Bit (LSB) steganography technique.",
+    "tags": ["Java", "Swing", "Steganography", "Image Processing"],
+    "githubLink": "https://github.com/rajput-musa/DigitalSteganography",
+    "demoLink": ""
   }
 ] 
