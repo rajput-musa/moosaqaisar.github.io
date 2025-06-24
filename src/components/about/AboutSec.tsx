@@ -1,9 +1,11 @@
+import coverImg from "/assets/About/cover.jpg";
+
 export default function AboutSection() {
   return (
     <section className="relative">
       <div className="relative mb-12">
         <img
-          src="/assets/About/cover.jpg"
+          src={coverImg}
           alt="Moosa Qaisar"
           className="w-full h-auto object-cover rounded-2xl"
         />

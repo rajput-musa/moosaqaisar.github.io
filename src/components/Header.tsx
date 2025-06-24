@@ -1,3 +1,5 @@
+import profilePic from "/assets/moosa_qaisar.jpeg";
+
 export default function Header() {
   return (
     <div>
@@ -10,7 +12,7 @@ export default function Header() {
               {/* Image with decorative elements */}
               <div className="relative">
                 <img
-                  src="/assets/moosa_qaisar.jpeg"
+                  src={profilePic}
                   alt="Moosa Qaisar"
                   className="w-32 h-32 rounded-2xl object-cover border-2 border-[color-mix(in_oklch,var(--color-primary)_10%,transparent)] group-hover:border-[color-mix(in_oklch,var(--color-primary)_30%,transparent)] transition-all duration-300"
                 />

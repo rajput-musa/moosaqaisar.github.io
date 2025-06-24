@@ -1,3 +1,6 @@
+import uetLogo from "/assets/uet-logo.png";
+import pgcLogo from "/assets/pgc-logo.png";
+
 export default function EducationSection() {
   return (
     <section className="space-y-6">
@@ -11,20 +14,9 @@ export default function EducationSection() {
           <div className="md:w-1/4 flex flex-col items-center">
             <div className="w-32 h-32 rounded-lg overflow-hidden relative mx-auto">
               <img
-                src="/assets/uet-logo.png"
+                src={uetLogo}
                 alt="UET Taxila Logo"
                 className="w-full h-full object-contain"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = "none";
-                  const parent = (e.target as HTMLImageElement).parentElement;
-                  if (parent) {
-                    const text = document.createElement("div");
-                    text.className =
-                      "absolute inset-0 flex items-center justify-center text-2xl font-bold text-[var(--color-primary)]";
-                    text.textContent = "UET";
-                    parent.appendChild(text);
-                  }
-                }}
               />
             </div>
             <div className="mt-4 text-center">
@@ -52,20 +44,9 @@ export default function EducationSection() {
            <div className="md:w-1/4 flex flex-col items-center">
             <div className="w-32 h-32 rounded-lg overflow-hidden relative mx-auto">
               <img
-                src="/assets/pgc-logo.png"
+                src={pgcLogo}
                 alt="Punjab Group of Colleges Logo"
                 className="w-full h-full object-contain"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = "none";
-                  const parent = (e.target as HTMLImageElement).parentElement;
-                  if (parent) {
-                    const text = document.createElement("div");
-                    text.className =
-                      "absolute inset-0 flex items-center justify-center text-2xl font-bold text-[var(--color-primary)]";
-                    text.textContent = "PGC";
-                    parent.appendChild(text);
-                  }
-                }}
               />
             </div>
             <div className="mt-4 text-center">
