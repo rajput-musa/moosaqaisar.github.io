@@ -8,5 +8,6 @@ export default defineConfig(({ command }) => {
   return {
     base,
     plugins: [react(), tailwindcss()],
+    publicDir: "public",
   };
 });

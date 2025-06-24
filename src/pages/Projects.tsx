@@ -12,9 +12,7 @@ export default function Projects() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch(
-          "https://raw.githubusercontent.com/aidanandrews22/aidanandrews22.github.io/main/content/projects.json",
-        );
+        const response = await fetch("/projects.json");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }

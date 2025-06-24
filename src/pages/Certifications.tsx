@@ -40,10 +40,12 @@ export default function Certifications() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchCerts = async () => {
+    const fetchCertifications = async () => {
       try {
         const response = await fetch("/certifications.json");
-        if (!response.ok) throw new Error("Failed to fetch certifications");
+        if (!response.ok) {
+          throw new Error("Failed to fetch certifications");
+        }
         const data = await response.json();
         setCerts(data);
       } catch (error) {
@@ -52,7 +54,7 @@ export default function Certifications() {
         setLoading(false);
       }
     };
-    fetchCerts();
+    fetchCertifications();
   }, []);
 
   if (loading) {
