@@ -1,26 +1,42 @@
 [
   {
-    "id": "google-it-automation",
-    "title": "Google IT Automation with Python",
-    "issuer": "Google & Coursera",
-    "date": "2023-11-20",
-    "url": "https://www.coursera.org/professional-certificates/google-it-automation",
+    "id": "gen-ai-learning-path",
+    "title": "Introduction to Generative AI Learning Path",
+    "issuer": "Google Cloud",
+    "date": "",
+    "url": "",
     "logo": ""
   },
   {
-    "id": "deep-learning-ai",
-    "title": "Deep Learning Specialization",
-    "issuer": "DeepLearning.AI & Coursera",
-    "date": "2024-03-15",
-    "url": "https://www.coursera.org/specializations/deep-learning",
+    "id": "transformer-bert-models",
+    "title": "Transformer Models and BERT Model",
+    "issuer": "Google Cloud",
+    "date": "",
+    "url": "",
     "logo": ""
   },
   {
-    "id": "ibm-data-science",
-    "title": "IBM Data Science Professional Certificate",
-    "issuer": "IBM & Coursera",
-    "date": "2024-06-01",
-    "url": "https://www.coursera.org/professional-certificates/ibm-data-science",
+    "id": "encoder-decoder-architecture",
+    "title": "Encoder-Decoder Architecture",
+    "issuer": "Google Cloud",
+    "date": "",
+    "url": "",
+    "logo": ""
+  },
+  {
+    "id": "attention-mechanism",
+    "title": "Attention Mechanism",
+    "issuer": "Google Cloud",
+    "date": "",
+    "url": "",
+    "logo": ""
+  },
+  {
+    "id": "seo-optimization",
+    "title": "SEO Optimization",
+    "issuer": "DigiSkills.pk",
+    "date": "",
+    "url": "",
     "logo": ""
   }
 ] 
