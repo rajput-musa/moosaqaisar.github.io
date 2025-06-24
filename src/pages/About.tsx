@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import "react-medium-image-zoom/dist/styles.css";
 
-import resumePdf from "/assets/MoosaQaisar.pdf";
-import coverLetterPdf from "/assets/CoverLetter.pdf";
+import resumePdf from "/assets/PDF/MoosaQaisar.pdf";
+import coverLetterPdf from "/assets/PDF/CoverLetter.pdf";
 
 import { Project as ProjectType } from "../components/ProjectCard";
 import TLDR from "../components/tldr";
