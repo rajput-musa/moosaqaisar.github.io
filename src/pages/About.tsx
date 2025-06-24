@@ -57,7 +57,7 @@ export default function About() {
     const fetchProjects = async () => {
       try {
         const response = await fetch(
-          "https://raw.githubusercontent.com/rajput-musa/moosaqaisar.github.io/master/public/projects.json",
+          `${import.meta.env.BASE_URL}projects.json`,
         );
         if (!response.ok) throw new Error("Failed to fetch projects");
         const allProjects = await response.json();
