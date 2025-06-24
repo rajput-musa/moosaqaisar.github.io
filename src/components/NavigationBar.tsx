@@ -24,6 +24,14 @@ export default function NavigationBar() {
               >
                 Projects
               </NavLink>
+              <NavLink
+                to="/certifications"
+                className={({ isActive }) =>
+                  `transition-all ${isActive ? "font-bold border-b-2 border-current" : "hover:text-[var(--color-primary)]"}`
+                }
+              >
+                Certifications
+              </NavLink>
             </div>
           </div>
         </div>

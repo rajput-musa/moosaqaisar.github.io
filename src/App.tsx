@@ -12,6 +12,7 @@ const Projects = lazy(() => import("./pages/Projects"));
 const ReadingList = lazy(() => import("./pages/ReadingList"));
 const Bookshelf = lazy(() => import("./pages/Bookshelf"));
 const ProjectView = lazy(() => import("./pages/ProjectView"));
+const Certifications = lazy(() => import("./pages/Certifications"));
 const Header = lazy(() => import("./components/Header"));
 const NavigationBar = lazy(() => import("./components/NavigationBar"));
 
@@ -165,6 +166,7 @@ export default function App() {
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/projects/:id" element={<ProjectView />} />
+              <Route path="/certifications" element={<Certifications />} />
               <Route path="/reading-list" element={<ReadingList />} />
               <Route path="/bookshelf" element={<Bookshelf />} />
             </Routes>
