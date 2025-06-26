@@ -1,5 +1,43 @@
 [
   {
+    "id": "deep-research-agent",
+    "title": "DeepSearch-Agent",
+    "description": "A Multi-step autonomous research agent. It takes a high-level user query, interactively refines the research scope, dynamically plans a report outline, gathers information from the web, and writes a comprehensive, cited report in Markdown",
+    "details": {
+      "summary": "A Multi-step autonomous research agent that takes a high-level user query, interactively refines the research scope, dynamically plans a report outline, gathers information from the web, and writes a comprehensive, cited report in Markdown. It uses Tavily API for web search/scraping and Gemini AI API for LLM.",
+      "sections": [
+        {
+          "title": "Features",
+          "list": [
+            "Human-in-the-Loop: Starts by asking clarifying questions to narrow down the user's intent.",
+            "Dynamic Outline Planning: Generates a structured report outline based on initial search results, then expands each section with key questions.",
+            "Deep Research: Performs targeted, deep-dive searches for each section of the report.",
+            "Retrieval-Augmented Generation (RAG): Chunks and embeds research content into a vector store (FAISS) to find the most relevant information for writing.",
+            "Source Citation: Meticulously cites every factual statement, linking it back to the source URL.",
+            "Context-Aware Writing: Keeps track of previously written sections to maintain flow and avoid repetition.",
+            "PDF Export: Converts the final Markdown report into a high-quality, well-formatted PDF with a table of contents using Pandoc and LaTeX."
+          ],
+          "isOrdered": false
+        },
+        {
+          "title": "How it Works",
+          "list": [
+            "Initial Topic: You provide a research topic.",
+            "Clarification: The agent asks clarifying questions to narrow down the scope and understand your requirements.",
+            "Research & Report Generation: Based on your answers, the agent conducts research and generates a report section by section. You can see the progress in the UI.",
+            "Download Report: Once the report is complete, a \"Download Report as PDF\" button will appear. Click it to download the report."
+          ],
+          "isOrdered": true
+        }
+      ]
+    },
+    "links": {
+      "github": "https://github.com/rajput-musa/DeepResearch-Agent",
+      "live": "https://huggingface.co/spaces/MusaR/DeepResearch-Agent"
+    },
+    "tags": ["Python", "Agent", "AI", "RAG", "DeepSearch", "Gemini", "Tavily"]
+  },
+  {
     "id": "nlp-rag-world-news",
     "title": "NLP RAG on 30,000 World News Articles",
     "description": "A RAG pipeline built on the world news dataset, featuring hybrid retrieval and cross-encoder reranking.",
