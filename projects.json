@@ -33,7 +33,7 @@
     },
     "links": {
       "github": "https://github.com/rajput-musa/DeepResearch-Agent",
-      "live": "https://huggingface.co/spaces/MusaR/DeepResearch-Agent"
+      "live": "https://huggingface.co/spaces/MusaR/Mini-DeepResearch-Agent"
     },
     "tags": ["Python", "Agent", "AI", "RAG", "DeepSearch", "Gemini", "Tavily"]
   },
