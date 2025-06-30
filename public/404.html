@@ -5,25 +5,19 @@
     <title>Moosa Qaisar - Page Not Found</title>
     <script type="text/javascript">
       // Don't execute the script if the page is viewed locally
-      if (window.location.protocol !== "file:") {
+      // if (window.location.protocol !== "file:") {
         // Get the current path segment
-        var path = window.location.pathname
-          .split("/")
-          .filter(function (n) {
-            return n !== "";
-          })
-          .slice(1)
-          .join("/"); // We slice(1) to remove the repo name
+        var path = window.location.pathname;
 
         // Redirect to the new URL with the path as a query string
         window.location.replace(
           window.location.protocol +
             "//" +
             window.location.hostname +
-            "/moosaqaisar.github.io/?p=/" +
+            "/?p=" +
             path
         );
-      }
+      // }
     </script>
   </head>
   <body></body>

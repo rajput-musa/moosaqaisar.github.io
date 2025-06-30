@@ -80,7 +80,7 @@ export default function FilterDropdown({
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="absolute z-[1] w-full mt-2 bg-background
+            className="absolute z-50 w-full mt-2 bg-gray-900
                      border border-[color-mix(in_oklch,var(--color-primary)_20%,transparent)] rounded-lg shadow-lg"
           >
             <ul className="py-1 max-h-[60vh] overflow-y-auto">

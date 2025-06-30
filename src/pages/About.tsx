@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import "react-medium-image-zoom/dist/styles.css";
+import { Link } from "react-router-dom";
 
-import resumePdf from "/assets/PDF/MoosaQaisar.pdf";
+import resumePdf from "/assets/PDF/Moosa_Qaisar_Resume.pdf";
 import coverLetterPdf from "/assets/PDF/CoverLetter.pdf";
 
 import { Project as ProjectType } from "../components/ProjectCard";
@@ -15,6 +16,7 @@ import GitHubChart from "../components/Git";
 import ProjectCard from "../components/ProjectCard";
 
 const currentProjectIds = [
+  "deep-research-agent",
   "nlp-rag-world-news",
   "local-rag-chatbot",
   "rag-chatbot",
@@ -26,12 +28,12 @@ const CurrentProjectsSection = ({ projects }: { projects: ProjectType[] }) => (
   <section>
     <div className="flex justify-between items-center mb-6">
       <h2 className="text-3xl font-bold">Current Projects</h2>
-      <a
-        href="/projects"
+      <Link
+        to="/projects"
         className="px-4 py-2 text-sm rounded-lg border border-[color-mix(in_oklch,var(--color-primary)_10%,transparent)] hover:bg-[color-mix(in_oklch,var(--color-primary)_5%,transparent)] transition-colors"
       >
         View all →
-      </a>
+      </Link>
     </div>
     <p className="text-lg mb-8">
       Building meaningful projects is how I translate my ideas into reality. Each

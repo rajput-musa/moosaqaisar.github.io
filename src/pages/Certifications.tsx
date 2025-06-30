@@ -24,9 +24,11 @@ const CertificationCard = ({ cert }: { cert: Certification }) => (
           {cert.title}
         </h3>
         <p className="text-md text-slate-400 mt-1">{cert.issuer}</p>
-        <p className="text-sm text-slate-500 mt-2">
-          Issued: {new Date(cert.date).toLocaleDateString("en-US", { year: "numeric", month: "long" })}
-        </p>
+        {cert.date && (
+          <p className="text-sm text-slate-500 mt-2">
+            Issued: {new Date(cert.date).toLocaleDateString("en-US", { year: "numeric", month: "long" })}
+          </p>
+        )}
       </div>
       <div className="text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">
         →
@@ -38,6 +40,7 @@ const CertificationCard = ({ cert }: { cert: Certification }) => (
 export default function Certifications() {
   const [certs, setCerts] = useState<Certification[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchCertifications = async () => {
@@ -52,6 +55,7 @@ export default function Certifications() {
         setCerts(data);
       } catch (error) {
         console.error("Error fetching certifications:", error);
+        setError("Failed to load certifications. Please try refreshing the page.");
       } finally {
         setLoading(false);
       }
@@ -63,6 +67,14 @@ export default function Certifications() {
     return (
       <div className="flex justify-center items-center h-40">
         <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="text-center py-10">
+        <p className="text-red-500">{error}</p>
       </div>
     );
   }

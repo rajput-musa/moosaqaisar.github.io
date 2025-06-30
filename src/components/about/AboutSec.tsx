@@ -71,13 +71,6 @@ export default function AboutSection() {
             in developing and implementing machine learning models, with a focus
             on computer vision and Natural Language Processing.
           </p>
-          <p className="text-xl leading-relaxed">
-            I am driven by a desire to innovate and solve complex problems.
-            My project experience includes developing a real-time face mask
-            detector and a Devanagari character recognition system. I am always
-            eager to learn and apply new technologies to create real-world
-            impact.
-          </p>
         </div>
       </div>
     </section>
